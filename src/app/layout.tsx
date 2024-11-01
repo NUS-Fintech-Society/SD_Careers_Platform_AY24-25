@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 
 import {Montserrat, Roboto} from 'next/font/google';
 
@@ -48,7 +50,9 @@ export default function RootLayout({
           ${geistMono.variable}
         antialiased`}
       >
-        {children}
+          <Navbar />
+            {children}
+          <Footer/>
       </body>
     </html>
   );
