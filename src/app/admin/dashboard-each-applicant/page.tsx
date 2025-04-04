@@ -82,10 +82,10 @@ export default function AdminDashboardEachApplicantPage() {
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center font-body">
-            <div className="flex flex-row lg:flex-row w-full max-w-6xl p-4 items-start">
+            <div className="flex flex-col lg:flex-row w-full max-w-6xl p-4 items-start">
                 <button
                     type="button"
-                    className="font-bold bg-blue-900 text-white rounded-full py-2 px-6 mr-24 mt-12"
+                    className="font-bold bg-blue-900 text-white rounded-full py-2 px-6 mr-24 mt-12 lg:w-36"
                     onClick={() => window.history.back()}
                 >
                     &lt; Back
